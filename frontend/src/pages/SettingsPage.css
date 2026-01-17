@@ -1,0 +1,209 @@
+.settings-page {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.settings-page h1 {
+  color: #10b981;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Settings Container */
+.settings-container {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Settings Section */
+.settings-section {
+  padding: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.settings-section:last-of-type {
+  border-bottom: none;
+}
+
+.settings-section h2 {
+  color: #10b981;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Setting Item */
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.setting-item:last-child {
+  margin-bottom: 0;
+}
+
+.setting-label {
+  flex: 1;
+}
+
+.setting-label label {
+  margin: 0 0 0.25rem 0;
+  display: block;
+}
+
+.setting-label p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.setting-item input[type="text"],
+.setting-item select {
+  width: 300px;
+  margin-left: 2rem;
+}
+
+/* Toggle Checkbox */
+.toggle-checkbox {
+  width: 60px !important;
+  height: 30px !important;
+  margin-left: 2rem;
+  cursor: pointer;
+  accent-color: #10b981;
+}
+
+/* Data Actions */
+.data-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Support Links */
+.support-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.support-link {
+  display: inline-block;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border-radius: 0.75rem;
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid #d1fae5;
+}
+
+.support-link:hover {
+  background: linear-gradient(135deg, #ecfdf5 0%, #dcfce7 100%);
+  color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+}
+
+/* About Section */
+.about-section {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+}
+
+.about-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border-left: 4px solid #10b981;
+}
+
+.about-content p {
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-content strong {
+  color: #10b981;
+}
+
+/* Action Buttons */
+.settings-actions {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-large {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .setting-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .setting-item input[type="text"],
+  .setting-item select {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.75rem;
+  }
+
+  .toggle-checkbox {
+    margin-left: 0 !important;
+  }
+
+  .data-actions {
+    flex-direction: column;
+  }
+
+  .btn-small {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .support-links {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-actions {
+    flex-direction: column;
+  }
+
+  .btn-large {
+    width: 100%;
+  }
+}
